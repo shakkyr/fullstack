@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contianer {
+    background-color:tomato;
+    width: 200px;
+    height: 200px;
+    margin: 200px 0px 0px 200px;
+    position: relative;
+}
+.inside {
+    background-color: aqua;
+    width: 50%;
+    height: 100%;
+   
+    position: absolute;
+}
