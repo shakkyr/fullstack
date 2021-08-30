@@ -1,0 +1,65 @@
+@media screen and (max-width: 800px) {
+    #container .first-item{
+        background-color: grey;
+        font-size: 15px;
+        color: white;
+       text-align: center;
+       width: 100%;
+       float: none;
+       margin: 20px;
+    }
+    #container .second-item{
+        background-color: grey;
+        font-size: 15px;
+        color: white;
+       text-align: center;
+       width: 100%;
+       float: none;
+       margin: 20px;
+    }
+    #container .third-item{
+        background-color: grey;
+        font-size: 15px;
+        color: white;
+       text-align: center;
+       width: 100%;
+       float: none;
+       margin: 20px;
+    }
+    #container .fourth-item{
+        background-color: grey;
+        font-size: 15px;
+        color: white;
+       text-align: center;
+       width: 100%;
+       float: none;
+       margin: 20px;
+    }
+
+  
+}
+
+.first-item{
+    float:left;
+    width:20%;
+    border:2px solid black;
+    margin: 2px;
+}
+.second-item{
+    float:left;
+    width:20%;
+    border:2px solid black;
+    margin: 2px;
+}
+.third-item{
+    float:left;
+    width:20%;
+    border:2px solid black;
+    margin: 2px;
+}
+.fourth-item{
+    float:left;
+    width:20%;
+    border:2px solid black;
+    margin: 2px;
+}

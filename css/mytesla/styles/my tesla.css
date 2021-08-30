@@ -1,0 +1,382 @@
+
+html { 
+  scroll-snap-type: y mandatory;
+  width: 90vw;
+}
+*{
+    padding: 0;
+    margin: 0;
+}  
+
+section {
+    
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  #page-1 {
+    /* The image used */
+    background-image: url("/images/M3-Hero-LHD-US-D.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #navbar {
+    position: absolute;
+    width: 90vw;
+    top: 0;
+    left: 0;
+    display:flex;
+    height: 55px;
+    padding: 20px;
+   
+}   
+
+.order-now a{
+  border-radius: 25px;
+  border: 2px solid whitesmoke;
+  position: absolute;
+  width: 110px;
+  z-index: 20;
+  background-color: transparent;
+  bottom:10%;
+  right: 28%;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+}
+
+.order-now a:hover{
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+}
+
+
+.det1{
+  color: whitesmoke;
+  position: absolute;
+  bottom:10%;
+  right: 38%;
+}
+
+.det1 li{
+  display: inline-block;
+  padding:0px 30px 0px 30px;
+
+}
+
+.tesla-logo{
+    width: 120px;    
+    position:absolute;
+    margin:15px;
+    margin-left: 40px;
+    height: 30px;
+    float: left;
+    display: block;
+    align-self: flex-start;
+
+    
+
+}
+
+.tesla-logo:hover{
+  background-color: none;
+}
+
+.support{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  color: whitesmoke;
+  bottom:12%;
+  padding: 2px;
+  right: 3%;
+  position: fixed;
+  border-radius: 50px;
+  border:2px whitesmoke ridge;
+  background-color: whitesmoke;
+}
+
+
+.right-list {
+    flex-grow: 1;
+    width:268px;
+    float:right;
+    display:flex;
+    align-self:flex-end;
+    align-items: center;
+    justify-content: center;
+
+  }
+.right-list ul {
+
+    list-style: none;
+    height: 56px;
+    width: 268px;
+    float:right;
+    right: 0;
+    display: flex;  
+    justify-content:flex-start;
+    justify-items:start;
+
+}
+.right-list li {
+  padding: 4px 8px 4px 8px;
+  height: 32px;
+  min-height: 54px;
+  min-inline-size: 245px;
+ align-self:flex-start;
+ align-content: space-around;
+ flex:0;
+}
+
+.center-list ul {
+  position: relative; 
+  list-style: none;
+  height: 56px;
+  width: 713px;
+  text-align: center;
+  margin:16px;
+  
+}
+.center-list {
+  display:inline-block;
+  
+
+}
+.center-list ul{
+ 
+    list-style: none;
+    
+}
+
+.center-list li{
+  position: relative;
+    margin: 0px 10px;
+    padding: 4px 8px 4px 8px;
+    display: inline;
+}
+
+
+
+.center-list li:hover{
+    background-color: #5B6069;
+   
+    border-radius: 10px;
+    
+}
+
+.p0{
+  position: relative;
+  top:80px;
+  color: #FFFFFF;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+
+a {
+  position: relative;
+    text-decoration: none;
+    color: white;
+
+}
+
+.side-list{
+  position: fixed;
+}
+
+
+
+.side-list a{
+  
+  border-left:whitesmoke 0.01px solid;
+  padding: 0px 15px 10px 15px;
+  margin-left: 15px;  
+  top: 250px;
+
+  
+  
+
+}
+
+.side-list a:checked{
+  background-color: tomato;
+}
+
+.side-list li{
+  
+  padding: 20px 5px 20px 0px;
+  width: 100px;
+  
+}
+
+
+
+#navbar a:hover{
+  position: relative;
+    background-color:#5B6069;
+    border-radius: 10px;
+  
+}
+
+  #page-2 {
+    /* The image used */
+    background-image: url("/images/model_3_safety_hero.png");
+    
+  
+    width: 67%;
+    height: 100vh;
+    float: right;;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pg2-leftside{
+    width: 33%;
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: left;
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+
+  .order-now2 a{
+    border-radius: 25px;
+    border: 2px solid black;
+    position: absolute;
+    width: 110px;
+    z-index: 20;
+    background-color: transparent;
+    bottom:10%;
+    right: 28%;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+  }
+  
+  .order-now2 a:hover{
+    background-color: black;
+    color:white;
+  }
+
+  .p1{
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #181b21;
+    font-weight: 500;
+  }
+
+  .p2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #181b21;
+  }
+
+  .p3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #393c41;
+  }
+  #page-3{
+    /* The image used */
+    background-image: url("/images/lhd-performance-hero-desktop.jpg");
+    
+    
+    width: 100%;
+    height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .det2{
+    width:600px;
+    margin:0px 0px 500px 500px;
+    height: 50px;
+    
+  }
+  .det2 td{
+    margin-bottom: 300px;
+    padding:10px;
+  }
+
+  .det2 th{
+    width: 30%;
+    height: 20px;
+    padding: 10px;
+  }
+
+  /* .det2 ul{
+    color: whitesmoke;
+    position: relative;
+    bottom:20%;
+    display: inline-block;
+    
+   
+  }
+   */
+  /* .det2 li{
+    display:inline-block;
+    padding:0px 30px 0px 30px;
+    clear: both; */
+  
+  /* } */
+
+  /* .det2 a{
+    display:inline-block;
+  } */
+
+  .pg3-bottom{
+    box-sizing: border-box;
+    padding: 50px;
+  }
+
+  .p4{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #181b21;
+  }
+
+  .p5{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #181b21;
+  }
+
+  .p6{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #393c41;
+  }
+
+
+
+
+
+

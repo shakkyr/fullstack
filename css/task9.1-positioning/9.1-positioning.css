@@ -1,0 +1,16 @@
+#outer {
+width: 100px;
+height: 100px;
+background: darkcyan;
+margin: 50px;
+position: relative;   /*since the inner div was mentioned as a child of the outer div
+                       we have to give the outer div a relative position that makes it's relative to it self and all the nesting 
+                        children like the inner div will be related to it */
+}
+#inner {
+width: 50px;
+height: 50px;
+background: lightgreen;
+position: absolute;
+top: 10px;
+}
