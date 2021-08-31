@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contianer {
+    background-color:tomato;
+    width: 200px;
+    height: 200px;
+    margin: 200px 0px 0px 200px;
+    position: relative;
+}
+
+.inside {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right:-200px;
+    
+   
+}
+
+
+.contianer:hover > div{
+    animation:animate1 2s forwards ease-in-out;
+}
+
+@keyframes animate1 {
+    from{
+        right: -200px;
+    }
+    to {
+        right: 0;
+        background-color:black;    }
+}
