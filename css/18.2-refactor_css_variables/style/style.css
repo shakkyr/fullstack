@@ -121,24 +121,27 @@
 }
 
 #navbar{
-  top: 0;
+
   width: 100vw;
   height: 15vh;
   display: flex;
-  justify-content: space-between;
-  justify-items: flex-end;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   background-color: rgb(71, 62, 52);
   color: #cac719;
 }
 
 #navbar:hover{
-
-
+  opacity: 0.7;
 }
+
+
 #navbar a{
   text-decoration: none;
   color: white;
 }
+
 
 
 .header {
@@ -154,10 +157,10 @@
   background-size: cover;
   margin: 15px 0px;
   float: left;
-  opacity: 0.7;
+  opacity: 1;
   }
   .header:hover{
-    opacity: 1;
+    opacity: 0.7;
   }
 
 /*background image to the whole page */
@@ -183,11 +186,11 @@ html{
   width:575px;
   margin: 15px 0px;
   padding:20px;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .body:hover{
-  opacity: 1;
+  opacity: 0.7;
 }
 .contact {
   border-radius: 20px;
@@ -199,11 +202,11 @@ html{
   margin: 15px 0px;
   float: left;
   padding:15px;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .contact:hover{
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .follow{
