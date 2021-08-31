@@ -1,382 +1,480 @@
+@font-face {
+  font-family: myGothamFont;
+  src: url("/css/mytesla/font/GothamLight.ttf");
+}
+@font-face {
+  font-family: Gotham-Medium;
+  src: url("/css/mytesla/font/GothamMedium.ttf");
+}
+@font-face {
+  font-family: Gotham-bold;
+  src: url("/css/mytesla/font/GothamBold.ttf");
+}
+@font-face {
+  font-family: Gotham-book;
+  src: url("/css/mytesla/font/GothamBook.ttf");
+}
 
 html { 
   scroll-snap-type: y mandatory;
-  width: 90vw;
+  width: 100vw;
 }
-*{
-    padding: 0;
-    margin: 0;
-}  
-
-section {
-    
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    scroll-snap-align: start;
-    text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.bg-image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+html,
+body {
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /*Firefox */
 }
 
-  #page-1 {
-    /* The image used */
-    background-image: url("/images/M3-Hero-LHD-US-D.jpg");
-    width: 100vw;
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.clr {
+  clear: both;
+}
+.font-size-30px {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 45;
+}
+.font-size-14px {
+  font-size: 14px;
+}
+.font-size-13px {
+  font-size: 30px;
 
-  #navbar {
-    position: absolute;
-    width: 90vw;
-    top: 0;
-    left: 0;
-    display:flex;
-    height: 55px;
-    padding: 20px;
-   
-}   
-
-.order-now a{
-  border-radius: 25px;
-  border: 2px solid whitesmoke;
-  position: absolute;
-  width: 110px;
-  z-index: 20;
-  background-color: transparent;
-  bottom:10%;
-  right: 28%;
-  font-weight: 500;
+  line-height: 21px;
+}
+.font-size-12px {
+  font-size: 12px;
+  line-height: 18px;
+}
+.font-size-28px {
+  font-size: 28px;
+  line-height: 36px;
+}
+.font-size-20px {
   font-size: 20px;
-  padding: 10px 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: whitesmoke;
+
+  line-height: 28px;
+}
+.font-size-9px {
+  font-size: 9px;
+
+  line-height: 9px;
+}
+.font-size-17px {
+  font-size: 17px;
+
+  line-height: 20px;
+}
+.font-fam {
+  font-family: myGothamFont;
+}
+.font-fam-mid {
+  font-family: Gotham-Medium;
+}
+.font-fam-bold {
+  font-family: Gotham-bold;
 }
 
-.order-now a:hover{
-  background-color: whitesmoke;
-  color: rgb(0, 0, 0);
+.font-fam-book {
+  font-family: Gotham-book;
+}
+#header {
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+svg {
+  fill: white;
+}
+.svg-wrap {
+  width: 120px;
+  height: 50px;
+  float: left;
+  margin-left: 47px;
+}
+.svg-wrap-container {
+  width: 30%;
+}
+.block {
+  display: block;
+}
+.big-box {
+  width: 100%;
+  height: 300px;
+  border-radius: 45px;
+}
+.nav ul {
+  display: inline;
+  list-style: none;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
 }
 
+.nav {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  text-align: center;
+  display: inline;
+  padding-top: 19px;
+  padding-left: 1px;
+}
 
-.det1{
-  color: whitesmoke;
+.nav ul li a {
+  color: rgb(249, 249, 249);
+  line-height: 21px;
+  font-size: 15px;
+}
+.nav ul li {
+  display: inline;
+  width: 15px;
+  height: 5px;
+  padding: 12px;
+}
+.nav ul li:hover {
+  border: initial black 1px;
+  background: rgb(120, 125, 133);
+  transition: 0.5;
+  border-radius: 45px;
+}
+
+.nav-1 {
+  float: right;
+  margin-right: 2%;
+}
+
+.nav-2 {
+  margin: 0 auto;
+}
+/* Sidebar */
+.sidbar-container {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+}
+.sidbar {
   position: absolute;
-  bottom:10%;
-  right: 38%;
+  top: 30%;
+  margin-left: 10px;
+}
+.sidbar li {
+  margin: 0;
+}
+.sidbar li a {
+  font-size: 30px;
+  font-weight: 400;
+  width: 2px;
+  color: white;
+  opacity: 0.5;
+}
+.sidbar-item {
+  opacity: 0.2;
+  color: transparent;
 }
 
-.det1 li{
-  display: inline-block;
-  padding:0px 30px 0px 30px;
-
+.sidbar li :hover {
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+}
+.section-body h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 14%;
+  left: 45%;
+  font-weight: 500;
+  line-height: 48px;
+}
+/* Description */
+.left-spedometer-mi {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#speed-to-60 {
+  float: left;
+  width: 20%;
+  height: 100%;
 }
 
-.tesla-logo{
-    width: 120px;    
-    position:absolute;
-    margin:15px;
-    margin-left: 40px;
-    height: 30px;
-    float: left;
-    display: block;
-    align-self: flex-start;
-
-    
-
+.speed {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  top: 5px;
+  left: 5px;
 }
 
-.tesla-logo:hover{
-  background-color: none;
+.tcl-speedometer__needle {
+  width: 28px;
+  height: 18px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 17px;
+  left: 18px;
 }
-
-.support{
+.speed-time {
+  position: absolute;
+  left: 50px;
+}
+.section-description {
+  width: 70%;
+  height: 80px;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 28%;
+}
+.section-descriptin-rghit {
+  background: white;
+  position: fixed;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
+  left: 95%;
+}
+.section-descriptin-rghit:hover {
+  cursor: pointer;
+}
+
+.section-descriptin-rghit img {
   position: absolute;
-  color: whitesmoke;
-  bottom:12%;
-  padding: 2px;
-  right: 3%;
-  position: fixed;
-  border-radius: 50px;
-  border:2px whitesmoke ridge;
-  background-color: whitesmoke;
+  top: 25%;
+  left: 20%;
+}
+.section-description-left {
+  width: 60%;
+
+  float: left;
 }
 
-
-.right-list {
-    flex-grow: 1;
-    width:268px;
-    float:right;
-    display:flex;
-    align-self:flex-end;
-    align-items: center;
-    justify-content: center;
-
-  }
-.right-list ul {
-
-    list-style: none;
-    height: 56px;
-    width: 268px;
-    float:right;
-    right: 0;
-    display: flex;  
-    justify-content:flex-start;
-    justify-items:start;
-
-}
-.right-list li {
-  padding: 4px 8px 4px 8px;
-  height: 32px;
-  min-height: 54px;
-  min-inline-size: 245px;
- align-self:flex-start;
- align-content: space-around;
- flex:0;
+.speed-rang {
+  position: absolute;
+  top: 42px;
+  left: 20px;
 }
 
-.center-list ul {
-  position: relative; 
-  list-style: none;
-  height: 56px;
-  width: 713px;
+.box {
+  width: 120px;
+  height: 100%;
+}
+#mi-range {
+  margin-left: 32%;
+}
+#range {
+  margin-top: 5px;
+  margin-left: -3px;
+}
+.button {
+  float: right;
+  height: 100%;
+  width: 20%;
   text-align: center;
-  margin:16px;
-  
 }
-.center-list {
-  display:inline-block;
-  
+.button input {
+  margin-top: 15px;
+  border: solid white 2px;
+  border-radius: 50px;
+  padding: 10px 35px;
+  color: white;
+  background: Transparent;
+  cursor: pointer;
+}
+.button input:hover {
+  background: white;
+  color: black;
+}
 
+#awd {
+  position: absolute;
+  left: 61%;
+  bottom: 0px;
 }
-.center-list ul{
- 
-    list-style: none;
-    
+.awm-text-2 {
+  margin-top: 4px;
+  margin-left: 1px;
 }
 
-.center-list li{
+/* ************************************************************************ */
+/* Sectoion 2 */
+.section-2 {
+  width: 100%;
+  height: 100vh;
+}
+.sec-2-left {
+  float: left;
+  width: 30%;
+  height: 100vh;
+  padding: 0 50px;
+}
+.sec-2-right {
+  float: right;
+  width: 70%;
+  height: 100vh;
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero")
+    no-repeat center center/cover;
+}
+#sec-2-h1 {
+  color: #181b21;
+}
+.sec-2-left-h2 {
+  color: #181b21;
+}
+.sec-2-head {
+  display: block;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.sec-2-safety-des {
+  color: #393c41;
+  line-height: 1.5em;
+  padding-top: 15px;
+}
+
+.five-star-rating {
+  background: rgb(242, 242, 242);
+  margin-top: 20px;
+}
+.big-box-h2 {
+  width: 90%;
+  color: #181b21;
+  text-align: center;
+  line-height: 1.7em;
+  padding: 10px 20px;
+}
+
+/* five stars  */
+
+.stars {
+  float: right;
+}
+.sub-element {
+  float: left;
+}
+.five-star-ratin-body-elemnt {
+  width: 100%;
+  height: 20px;
+  padding: 17px 17px 20px 20px;
+}
+
+.five-star-ratin-body {
+  color: #393c41;
+}
+
+.learn-and-order {
+  width: 100%;
+  height: 40px;
+}
+
+.learn-and-order-round {
+  width: 400px;
+  height: 50px;
+  margin-left: 10px;
+}
+.btn-round {
+  border: solid black 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  color: rgb(57, 60, 65);
   position: relative;
-    margin: 0px 10px;
-    padding: 4px 8px 4px 8px;
-    display: inline;
+  z-index: 2;
+  top: 4px;
+}
+.btn-normal {
+  border: solid black 3px;
+  width: 130px;
+  height: 40px;
+  border-radius: 50px;
+}
+.learn-and-order-round input:hover {
+  cursor: pointer;
+  background: black;
+  color: #fff;
 }
 
+/* Section 3 */
 
-
-.center-list li:hover{
-    background-color: #5B6069;
-   
-    border-radius: 10px;
-    
+.box-2 {
+  width: 300px;
+  height: 150px;
+}
+.sec-3-main {
+  width: 100%;
+  height: 60vh;
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop")
+    no-repeat center center/cover;
 }
 
-.p0{
+.section-description-2 {
+  width: 100%;
+  height: 140px;
+  text-align: center;
+  float: right;
+}
+.left-spedometer-mi-2 {
+  width: 70%;
+  height: 100%;
   position: relative;
-  top:80px;
-  color: #FFFFFF;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 500;
-  font-size: 40px;
+  margin: auto;
 }
 
-
-a {
-  position: relative;
-    text-decoration: none;
-    color: white;
-
+.sec-3-body {
+  width: 100%;
+  height: 62%;
 }
-
-.side-list{
-  position: fixed;
+.white {
+  color: white;
 }
-
-
-
-.side-list a{
-  
-  border-left:whitesmoke 0.01px solid;
-  padding: 0px 15px 10px 15px;
-  margin-left: 15px;  
-  top: 250px;
-
-  
-  
-
+#awd-2 {
+  float: right;
 }
-
-.side-list a:checked{
-  background-color: tomato;
+#speed-to-60-2 {
+  float: left;
+  line-height: 1.7em;
 }
-
-.side-list li{
-  
-  padding: 20px 5px 20px 0px;
-  width: 100px;
-  
+#mi-range-2 {
+  float: left;
 }
-
-
-
-#navbar a:hover{
-  position: relative;
-    background-color:#5B6069;
-    border-radius: 10px;
-  
+/* Footer */
+.sec-3-footer {
+  width: 100%;
+  height: 41.5vh;
 }
-
-  #page-2 {
-    /* The image used */
-    background-image: url("/images/model_3_safety_hero.png");
-    
-  
-    width: 67%;
-    height: 100vh;
-    float: right;;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .pg2-leftside{
-    width: 33%;
-    padding: 50px;
-    background-color: #FFFFFF;
-    text-align: left;
-    position: absolute;
-    height: 100vh;
-    z-index: -1;
-    box-sizing: border-box;
-  }
-
-  .order-now2 a{
-    border-radius: 25px;
-    border: 2px solid black;
-    position: absolute;
-    width: 110px;
-    z-index: 20;
-    background-color: transparent;
-    bottom:10%;
-    right: 28%;
-    font-weight: 500;
-    font-size: 20px;
-    padding: 10px 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-  }
-  
-  .order-now2 a:hover{
-    background-color: black;
-    color:white;
-  }
-
-  .p1{
-    font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #181b21;
-    font-weight: 500;
-  }
-
-  .p2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 500;
-    color: #181b21;
-  }
-
-  .p3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #393c41;
-  }
-  #page-3{
-    /* The image used */
-    background-image: url("/images/lhd-performance-hero-desktop.jpg");
-    
-    
-    width: 100%;
-    height: 70vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .det2{
-    width:600px;
-    margin:0px 0px 500px 500px;
-    height: 50px;
-    
-  }
-  .det2 td{
-    margin-bottom: 300px;
-    padding:10px;
-  }
-
-  .det2 th{
-    width: 30%;
-    height: 20px;
-    padding: 10px;
-  }
-
-  /* .det2 ul{
-    color: whitesmoke;
-    position: relative;
-    bottom:20%;
-    display: inline-block;
-    
-   
-  }
-   */
-  /* .det2 li{
-    display:inline-block;
-    padding:0px 30px 0px 30px;
-    clear: both; */
-  
-  /* } */
-
-  /* .det2 a{
-    display:inline-block;
-  } */
-
-  .pg3-bottom{
-    box-sizing: border-box;
-    padding: 50px;
-  }
-
-  .p4{
-    font-size: 17px;
-    font-weight: 500;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #181b21;
-  }
-
-  .p5{
-    font-size: 28px;
-    font-weight: 500;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #181b21;
-  }
-
-  .p6{
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #393c41;
-  }
-
-
-
-
-
-
+.sec-3-footer-content {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+.sec-3-footer-left {
+  width: 38%;
+  height: 100%;
+  float: left;
+}
+.learn-and-order span {
+  margin: 0px 10px;
+}
+.sec-3-footer-right {
+  color: #393c41;
+}
+.sec-3-footer-left h1 {
+  margin-bottom: 5px;
+}
