@@ -1,0 +1,265 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* header===> */
+
+/* 1-navication bar */
+.navbar {
+
+position:fixed;
+background: #333333;
+width: 100%;
+height: 44px;
+opacity: 0.97;
+
+}
+
+.navbar ul  {
+display: flex;
+list-style: none;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+}
+
+.navbar ul li {
+padding: 0 20px; 
+
+}
+.search-tool-nav {
+    top:0;
+width: 20px;
+height: 20px;
+}
+
+.basket-icon-nav {
+    top:0;
+    width: 100px;
+    height: 100px;
+}
+.navbar a  {
+text-decoration: none;
+color: #F5F5F7;
+}
+
+.basket-icon-nav, .search-tool-nav {
+position: absolute;
+
+}
+
+ /* the message under the navigation bar  */
+.message p{
+top: 44px;
+position: absolute;
+width: 100vw;
+display: flex;
+align-items: center;
+height:44px;
+color:black;
+}
+
+.message {
+    justify-content: center;
+}
+
+.message a {
+    display: flex;
+text-decoration: none;
+}
+
+ /* sections */
+section {
+margin-bottom: 10px;
+}
+
+ /* page 1 */
+.pag1 {
+background:url("../img/background-page1.jpg")no-repeat center center/cover;
+width: 100vw;
+height: 580px;
+color:#86868B
+}
+
+.list-page1 {
+    top: 200px;
+    position: absolute; 
+    width: 100vw;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.list-page1 h2 {
+    position: absolute;
+    color:black;
+    
+   
+}
+
+.list-page1 h3 {
+    position: absolute;
+    color:black;
+    
+    top: 40px;    
+}
+
+.offer-page1 {
+    top:100px;
+    position: absolute;
+    color:#86868B;
+    
+    
+}
+
+ 
+ .offer1 {
+     display: flex;
+     justify-content: center;
+     padding: 30px;
+ }
+ .offer1 a {
+     padding: 0 50px;
+     color:#2997FF;
+     text-decoration: none;
+ }
+
+
+ /* page 2 styling */
+
+.pag2 {
+background:url("../img/background-page2.jpg")no-repeat center center/cover;
+width: 100vw;
+height: 580px;
+position: relative;   
+}
+
+.list-page2 {
+    position: absolute; 
+    width: 100vw;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.list-page2 h2 {
+    position: absolute;
+    color:white;
+   
+}
+
+.list-page2 h3 {
+    position: absolute;
+    color:white;
+    
+    top: 40px;    
+}
+
+.offer-page2 {
+    top:100px;
+    position: absolute;
+    color:#86868B;
+}
+
+ 
+ .offer2 {
+     display: flex;
+     justify-content: center;
+     padding: 30px;
+ }
+ .offer2 a {
+     padding: 0 50px;
+     color:#2997FF;
+     text-decoration: none;
+ }
+
+/* page 3 */
+
+.page3 coontainer {
+    width: 50%;
+height: 100vh;
+position: relative;
+}
+#videoBG { 
+width: 50%;
+height: 100vw;
+object-fit: cover;
+
+position: absolute;
+}
+
+.seeing {
+    position: absolute;
+    z-index: 3;
+    object-fit:cover
+}
+
+.grid {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+        
+.L-T {
+        background: url(../img/L.T.jpg) no-repeat center center/cover;
+        height: 624px;
+        width: 728px;
+        color: white;
+        text-align: center;
+    }
+    
+    .R-T {
+        background:url(../img/R.T.jpg) no-repeat center center/cover;
+        height: 624px;
+        width: 728px;
+        color: white;
+        text-align: center;
+        
+    }
+    .L-C {
+        background: url(../img/L.C.jpg) no-repeat center center/cover;
+        height: 624px;
+        width: 728px;
+        text-align: center;
+    }
+    
+    .R-C {
+        background:url(../img/R.C.jpg) no-repeat center center/cover;
+        height: 624px;
+        width: 728px;
+        text-align: center;
+    }
+    .L-B {
+        background: url(../img/L.B.jpg) no-repeat center center/cover;
+        height: 624px;
+        width: 728px;
+        text-align: center;
+        top:200px;
+    }
+    
+    .R-B {
+        background:url(../img/R.B.jpg) no-repeat center center/cover;
+        height: 624px;
+        width: 728px;
+        text-align: center;
+    }
+
+    /* page 5 */
+.pag5 {
+    background-color:#F5F5F7;
+    text-align: center;
+    padding: 200px;
+}
+.table {
+    height: 100vh;
+    width: fit-content;
+    padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}

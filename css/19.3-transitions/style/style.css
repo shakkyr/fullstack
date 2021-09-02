@@ -86,7 +86,7 @@ body > * {
   z-index: 1;
   background: orangered;
   transform: translateY(-100%);
-  transition: 0.2s;
+  transition: 1s;
 }
 .three:hover:before {
   transform: translateY(0);
