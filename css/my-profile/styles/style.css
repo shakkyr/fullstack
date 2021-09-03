@@ -16,7 +16,7 @@
 
 body .content {
     color: #e4e6df;
-    margin-top: 30px;
+    margin:0 auto;
 }
 /* body::before {
     content: "";
@@ -68,21 +68,24 @@ justify-content: space-evenly;
 
 
 /* page2 */
-#wrapper {
-                position:relative;
-            }
-            #wrapper #bgContainer {
-                position:absolute;
-                width: 100%;
-                top:0; left:0;
-            }
-            #wrapper #bgContainer img {
-                width: 100%;
-                border: none
-            }
-            #content {
-                overflow:hidden;
-                position:relative;
-                width: 800px;
-                margin:0 auto;
-            }
+#container2 {
+position:relative;
+}
+
+#container2 #bgContainer {
+position:absolute;
+width: 100%;
+top:0; left:0;
+}
+
+#container2 #bgContainer img {
+width: 100%;
+border: none
+}
+
+#content2 {
+overflow:hidden;
+position:relative;
+width: 800px;
+margin:0 auto;
+}
