@@ -109,7 +109,12 @@ background-position: center;
     width: 800px;
     margin:0 auto;
 } */
+#holder {
+    top:0;
+    
+}
 #navbar {
+    top: 0;
     position: fixed;
     width: 450px;
     justify-content: center;
@@ -118,8 +123,16 @@ background-position: center;
     border-radius: 20px;
     background-color: rgb(83, 79, 79);
     opacity: 0.7;
+    z-index: 50;
+    justify-content: center;
 }
-#navbar audio{
+
+#navbar:hover {
+    opacity: 1;
+    
+}
+
+ audio {
     height: 30px;
     width: 100px;
 }
@@ -133,26 +146,29 @@ background-position: center;
 #navbar li {
     padding: 0 10px;
 }
+#navbar li:hover {
+    transition-timing-function: ease-out;
+    opacity: 1;
+    transform: scale(1.5);
+}
 
 #navbar a {
     color:greenyellow;
     font-family: 'ZCOOL KuaiLe', cursive;
-    
 }
+
+
+
 /* ****************page 1 ******************************* */
 #aboutme {
     position: relative;
     width: 100%;
     height: 100vh;
-    
-}
-body,container2 {
     background: url(../img/Matrix_Tunnel_Background_animation_Green_abstract_Tunnel_SciFi_Tunnel_loop.gif) no-repeat center center/cover;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
     
 }
+
+
 
 .head-line {
     position: fixed;
@@ -179,17 +195,12 @@ body,container2 {
     transition: transform .2s;
 }
 
-.profile::after:hover {
-    background: url(../img/meface.jpg) no-repeat center center/cover;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    right: 0;
-    top:0;
-    position:absolute;
-    box-shadow: 10px 10px rgb(3, 17, 9);
+.profile:hover {
+    right:200px;
+    top:200px;
+    transition-timing-function: ease-out;
     opacity: 1;
-    transition: transform .2s;
+    transform: scale(2);
 }
 
 .profile:checked {
@@ -212,18 +223,19 @@ transition: transform .2s;
 .content2:hover{
     opacity: 1;
     transform: scale(1.5);
+    left:100px;
 }
 
 .content2 ul {
     display:flex;
     flex-direction: column;
 }
+
 .content2 ul li { 
    
     opacity: 0.8;
     color: rgba(191, 191, 191, 1);
     padding: 10px;
-    font-family: 'ZCOOL KuaiLe', cursive;
 }
 /* ****************page 2 ******************************* */
 #experince {
@@ -231,15 +243,39 @@ transition: transform .2s;
     width: 100%;
     height: 100vh;
 }
-.content3 {
-    width: 100vw;
-    height: 100vh;
+.container3 {
+    width: 400px;
+    height: 400px;
+   
 }
-.content3 ul{
-    display: flex;
+
+.content3 {
+    color: white;
+    position: relative;
+    top:350px;
+    left: 50px;
+    border:rgb(39, 39, 37) solid 1px;
+border-radius: 15px;
+background: rgba(191, 191, 191, 0.5);
+transition: transform .2s;
+}
+
+.content3:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    left:100px;
+}
+
+.content3 ul {
+    display:flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+}
+
+.content3 ul li { 
+   
+    opacity: 0.8;
+    color: rgba(191, 191, 191, 1);
+    padding: 10px;
 }
 /* ****************page 3 ******************************* */
 #contactme {
