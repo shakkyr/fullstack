@@ -5,7 +5,7 @@
 }
 
 body {
-    background:url(../img/4-matrix.gif)no-repeat center center/cover;
+    background:url(../img/back.jpg)no-repeat center center/cover;
     height: 100vh;
    
     text-align: center;
@@ -13,10 +13,10 @@ body {
 }
 
 body .content {
-    color: #2997FF;
+    color: #e4e6df;
     margin-top: 30px;
 }
-body::before {
+/* body::before {
     content: "";
     top:0;
     width: 100%;
@@ -27,12 +27,14 @@ body::before {
 
 body * {
     z-index: 10;
-}
+} */
+
+
 .choice {
 display: flex;
 justify-content: center;
-margin-top: 60px;
-margin-right: 70px;
+margin-top: 100px;
+margin-right: 50px;
 justify-content: space-evenly;
 }
 
