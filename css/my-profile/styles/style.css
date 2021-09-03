@@ -10,6 +10,9 @@ html {
     scroll-snap-type: y mandatory;
     width: 100vw;
 }
+html span {
+    color:greenyellow;
+}
 
 li {
     list-style: none;
