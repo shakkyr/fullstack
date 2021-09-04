@@ -158,7 +158,7 @@ background-position: center;
 
 #navbar a {
     color:greenyellow;
-    font-family: 'ZCOOL KuaiLe', cursive;:
+    font-family: 'ZCOOL KuaiLe', cursive;
     position: relative;
 }
 
@@ -168,7 +168,7 @@ background-position: center;
   height: 2px;
   position: absolute;
   top: -5px;
-  left: 3px;
+  left: 0px;
   background-color: greenyellow;
   transform: scale(0);
   transform-origin: left;
@@ -220,28 +220,50 @@ background-position: center;
     color: yellowgreen;
     font-family:'ZCOOL KuaiLe', cursive; ;
     position: relative;
+    z-index: -1;
 }
 
 .head-line span::before {
-    color: yellowgreen;
-    font-family:'ZCOOL KuaiLe', cursive;
+    content: '';
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transform: translateY(-100%);
-    transition: 1s;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient( transparent 0%, #000 0%, #000 100%);
+    animation:  animate 2s linear forwards infinite;
 }
 
-.head-line span:hover:before {
-    transform: translateY(0);
-  }
+@keyframes animate
+{
+    0% {
+        left: 110%
+    }
+    100% {
+        left: -100%
+    }
+}
+
+
+/* .head-line span:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient( transparent 0%, #000 0%, #000 100%);
+    animation:  animate2 1.5s linear forwards;
+}
+
+@keyframes animate2
+{
+    0% {
+        left: 0
+    }
+}
+100% {
+    left: 110%
+} */
+
 
 .profile {
     background: url(../img/meface.jpg) no-repeat center center/cover;
@@ -253,21 +275,19 @@ background-position: center;
     position:fixed;
     box-shadow: 10px 10px rgb(3, 17, 9);
     opacity: 0.8;
-    transition: transform .2s;
+    transition: transform 4s;
+
 }
 
 .profile:hover {
-    right:200px;
-    top:200px;
-    transition-timing-function: ease-out;
+   
     opacity: 1;
-    transform: scale(2);
+    transform: rotate(360deg) scale(2) translateY(50%) translateX(-50%);
+    
+   
 }
 
-.profile:checked {
-    transform: scale(1.5);
-    opacity: 1;
-}
+
 
 .content2 {
 position: relative;
@@ -278,11 +298,10 @@ width: 400px;
 border:rgb(39, 39, 37) solid 1px;
 border-radius: 15px;
 background: rgba(191, 191, 191, 0.5);
-transition: transform .2s;
+transition: transform 2s;
 }
 
 .content2:hover{
-    opacity: 1;
     transform: scale(1.5);
     left:100px;
 }
@@ -318,7 +337,7 @@ transition: transform .2s;
     border:rgb(39, 39, 37) solid 1px;
 border-radius: 15px;
 background: rgba(191, 191, 191, 0.5);
-transition: transform .2s;
+transition: transform 2s;
 }
 
 .content3:hover{
