@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: wheat;
+}
+h1 {
+    color: teal;
+}
+
+.enterCity {
+    width: 80%;
+    background: rgb(201, 197, 197);
+    border-radius: 8px;
+    margin-bottom: 1%;
+}
+
+.myLocation {
+    width: 40%;
+    padding: 2%;
+    background:rgb(145, 144, 144) ;
+    border-radius: 8px;
+}
+.myLocation:hover{
+    background: brown;
+}

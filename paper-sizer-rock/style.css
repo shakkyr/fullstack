@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.gameContainer {
+    width: 80%;
+}
+.userHand {
+    border: 1px saddlebrown solid;
+    width :300px;
+    height: 200px;
+    background:saddlebrown;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.pcHand{
+    border: 1px saddlebrown solid;
+    width :300px;
+    height: 200px;
+    background:saddlebrown;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.userWins {
+
+}
+
+.pcWins {
+    
+}
+/* <div class="gameContainer">
+        <div class="userHand"></div>
+        <div class="pcHand"></div>
+        <div class="wins">
+            <span class="userWins">0<span>
+            <span class="pcWins">0<span>
+        </div> */
