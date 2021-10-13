@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(/img/Background-Blog-newspapers.jpg);
+    font-family: 'Courier New', Courier, monospace;
+}
+.mainPage {
+    margin-left: 1%;
+}
+
+.mainPage >h1 {
+    text-align: center;
+    color: rgb(88, 29, 29);
+    font-size: 3rem;
+}
+h1 span {
+    font-size: 1rem;
+    color:blue;
+}
+
+.mainPage >span {
+    font-weight: 900;
+    color: burlywood;
+    border-bottom: burlywood 3px solid;
+    padding: 1%;
+    margin-left: 7%;
+
+}
+
+.headLines1 {
+    display: block;
+}
+.headLines1 > .headLine {
+    border: 2px solid black;
+    margin-top: 1%;
+    width: 98%;
+}
+.headLines2 > .headLine {
+    border: 2px solid black;
+    margin-top: 1%;
+    width: 98%;
+}
+.headLines3 > .headLine {
+    border: 2px solid black;
+    margin-top: 1%;
+    width: 98%;
+}
+.headLines4 > .headLine {
+    border: 2px solid black;
+    margin-top: 1%;
+    width: 98%;
+}
+h3 {
+    color: brown;
+   
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+a {
+    font-size: 1.3rem;
+}
+
+img {
+    width: 20%;;
+}
+.headLines2 {
+    display: none;
+}
+.headLines3 {
+    display: none;
+}
+.headLines4 {
+    display: none;
+}
+
+/* <span class="topStories">Top Stories</span>
+       <span class="books">Books Review</span>
+       <span class="mostPopular">Most Popular</span>
+       <span class="movieReviews">movie Reviews</span>
+       <div class="headLines1"></div>
+       <div class="headLines2"></div>
+       <div class="headLines3"></div>
+       <div class="headLines4"></div> */
+
