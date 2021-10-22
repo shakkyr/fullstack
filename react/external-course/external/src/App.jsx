@@ -1,6 +1,7 @@
 import React from "react";
+import Task5 from "./Components/Task5/Task5";
 
-import Task4 from "./Components/Task4/Task4";
+// import Task4 from "./Components/Task4/Task4";
 // import Todo from "./Components/Task3/Todo";
 // import Greetings from "./Components/Task2/Greetings";
 // import Guest from "./Components/Task2/Guest";
@@ -50,9 +51,9 @@ import Task4 from "./Components/Task4/Task4";
 const App = ()=> {
     return (
         <div>
-
-        <Task4 />
-            {/* <Todo /> */}
+        <Task5 />
+        {/* <Task4 /> */}
+        {/* <Todo /> */}
         </div>
     )
 }
