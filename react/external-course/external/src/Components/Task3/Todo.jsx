@@ -1,4 +1,5 @@
 import React from "react";
+import './Todo.css'
 
 
 class Todo extends React.Component{
@@ -17,29 +18,34 @@ class Todo extends React.Component{
     }
 
     completedTaskHandler = (toDoIndex)=>{
-        let toDos = this.state.todos;
+        let todos = this.state.todos;
 
-        toDos.map((e,index) =>{
+        todos.map((todo,index) =>{
             if (index === toDoIndex){
-                e.isCompleted = true;
-                return this.setState()
+                todo.isCompleted = true;
+                return this.setState({todos: todos})
             }
-            console.log(this.State.toDos);
+            
         }) 
+        console.log(this.state.todos);
 
     }
     render() {
-        let todo = this.state.todos;
+        let todos = this.state.todos;
         return (
+            <div className="App">
              <ul>
-                {todo.map((e,index) => {
+                {todos.map((todo,index) => {
                     return (
-                        <li key={e.id} onClick={()=> {this.completedTaskHandler(index)}}>
-                        {e.toDoName} 
+                        <li key={todo.id} onClick={()=> {this.completedTaskHandler(index)}}
+                        className={todo.isCompleted ? 'completed' : ''}>
+                        
+                        {todo.toDoName} 
                         </li>
                     )
                 })}
              </ul>
+             </div>
         );
     }
 }

@@ -1,0 +1,13 @@
+.App {
+    text-align: center;
+}
+
+.App > ul {
+    list-style-type:none ;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+    font-weight: 600;
+}
